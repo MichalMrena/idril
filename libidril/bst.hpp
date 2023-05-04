@@ -55,6 +55,7 @@ private:
         BstNode (BstNode const&) = delete;
         BstNode (BstNode&&) = delete;
 
+        // TODO no pair, simple struct with key_, data_ members
         std::pair<Key const, T> data_;
         BstNode* parent_ {nullptr};
         BstNode* left_ {nullptr};
